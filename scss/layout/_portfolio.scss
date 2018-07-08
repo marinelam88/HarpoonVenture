@@ -1,0 +1,66 @@
+.prj-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projectInfo{
+    width: 100%;
+    padding: 2em;
+    margin-top: 1em;
+    cursor: pointer;
+    p{
+        font-size: 1em;
+        line-height: 2.188;
+    }
+    &:hover{
+        -webkit-box-shadow: 0 0 10px 0 $shadow-gray;
+        -moz-box-shadow: 0 0 10px 0 $shadow-gray;
+        box-shadow: 0 0 10px 0 $shadow-gray;
+        background-color: rgba(31,45,57,0.5);
+    }
+}
+
+.portfolio{
+    background: url("../assets/images/portfolio.png");
+    background-size: cover;
+    color: $white;
+    padding-bottom: 1em;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+    h3{
+        text-align: center;
+        padding: 0 0.5em;
+    }
+    h4{
+        color: $green;
+    }
+    h2{
+        color: $white !important;
+    }
+}
+
+@media screen and (min-width: $width-medium){
+    .portfolio{
+        text-align: initial;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2em;
+    }
+    .prj-wrapper{
+        width: 70%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .projectInfo{
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: $width-large){
+    .projectInfo{
+        width: 40%;
+    }
+}

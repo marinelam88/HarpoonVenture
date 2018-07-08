@@ -1,0 +1,13 @@
+.lSSlideOuter .lSPager.lSpg {
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+.lSSlideOuter .lSPager.lSpg>li {
+    display: block;
+}
+
+.lSSlideOuter .lSPager.lSpg>li a{
+    background-color: white;
+}

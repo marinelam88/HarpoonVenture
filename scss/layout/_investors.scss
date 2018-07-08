@@ -1,0 +1,36 @@
+.investors{
+    background: url("../assets/images/investors.png");
+    color: $white;
+    text-align: center;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    h4{
+        color: $green;
+    }
+    h2{
+        color: $white !important;
+    }
+
+    img:last-of-type{
+        padding-top: 2em;
+    }
+}
+
+@media screen and (min-width: $width-medium){
+    .investors{
+        text-align: initial;
+        padding-left: 0;
+        padding-bottom: 2em;
+        img:last-of-type{
+            padding-top: 0;
+            padding-left: 2em;
+        }
+    }
+
+    .content{
+        width: 70%;
+        position: relative;
+        left: 15em;
+    }
+}

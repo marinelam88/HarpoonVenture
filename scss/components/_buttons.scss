@@ -1,4 +1,4 @@
-button{
+.btn{
     border: 2px solid $green;
     background: transparent;
     color: $white;
@@ -17,4 +17,10 @@ button{
         background-position: 60%;
          
     }
+}
+
+.login-btn {
+    position: absolute;
+    right: 20%;
+    top: 5%;
 }

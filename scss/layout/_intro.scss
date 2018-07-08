@@ -2,7 +2,7 @@
     background: url("../assets/images/intro.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60em;
+    height: 42em;
     color: $white;
     display: flex;
     flex-direction: column;
@@ -19,11 +19,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-    }
-    button{
-        position: absolute;
-        right: 20%;
-        top: 5%;
     }
 }
 

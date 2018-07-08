@@ -1,38 +1,24 @@
 $(document).ready(function(){
-    var initializeSlider = function(id, beforeSlide){
-        $(id).lightSlider({
-            item: 1,
-            autoWidth: false,
-    
-            mode: "slide",
-            useCSS: true,
-            cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-            easing: 'linear', //'for jquery animation',////
-            speed: 400, //ms'
-            slideEndAnimation: true,
+    var initializeSlider = function(id){
+        var slider = tns({
+            container: id,
+            items: 1,
+            slideBy: 'page',
+            autoplay: false,
+            axis: "vertical",
             controls: false,
-            adaptiveHeight:false,
-            vertical:true,
-            pager: true,
-            enableTouch:true,
-            enableDrag:true,
-            freeMove:true,
-            swipeThreshold: 40,
-            responsive : [],
-            onBeforeSlide: beforeSlide
-        });
-    }
+            autoHeight: true,
+            nav: true,
+            mouseDrag: true,
+          });
 
-    var handleAboutSquaresInSlide = function(el){
-        var currentSlide = el.getCurrentSlideCount();
-        var $squares = el.find(".squares");
-        if(currentSlide !== 1){
-            $squares.fadeOut();
-        }else{
-            $squares.show();
-        }
+        return slider;
     }
 
     initializeSlider("#slider1");
-    initializeSlider("#slider2", handleAboutSquaresInSlide);
+    initializeSlider("#slider2");
+    initializeSlider("#slider3");
+    initializeSlider("#slider4");
+    initializeSlider("#slider5");
+
 });

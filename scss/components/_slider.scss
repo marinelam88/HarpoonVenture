@@ -1,0 +1,42 @@
+.tns-nav {
+    position: absolute;
+    right: 0;
+    top: 40%;
+
+    button {
+        display: block;
+        margin-bottom: 10px !important;
+    }
+    z-index: 10;
+  }
+
+.tns-nav > [aria-controls] {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.intro .tns-nav > [aria-controls],
+.portfolio .tns-nav > [aria-controls],
+.investors .tns-nav > [aria-controls]{
+    background: $white;
+}
+
+.about .tns-nav > [aria-controls],
+.advisors .tns-nav > [aria-controls] {
+    background: $dark-blue;
+}
+
+.intro .tns-nav > [aria-selected="true"],
+.portfolio .tns-nav > [aria-selected="true"],
+.investors .tns-nav > [aria-selected="true"], 
+.about .tns-nav > [aria-selected="true"],
+.advisors .tns-nav > [aria-selected="true"]{ background: $green; }
+
+.tns-outer {
+    position: relative;
+    width: 100%;
+}

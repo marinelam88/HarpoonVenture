@@ -6,33 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/lightslider.min.css">
-    <link rel="stylesheet" href="css/lightslider-vertical.css">
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/lightslider.min.js"></script>
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <script src="assets/js/jquery-3.3.1.min.js"></script>    
+    <script src="assets//js/tiny-slider.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
 
 <body>
     <div class="intro">
-        <button class="btn">Login</button>
-        <ul id="slider1">
-            <li>
+        <button class="btn login-btn">Login</button>
+        <div id="slider1">
+            <div>
                 <img src="./assets/images/logo.png" class="responsive-img" alt="logo">
-            </li>
-            <li>
+            </div>
+            <div>
                 <h1>Welcome to Harpoon</h1>
-            </li>
-            <li>
+            </div>
+            <div>
                 <h1>Quisque ipsum neque, porttitor</h1>
-            </li>
-            <li>
+            </div>
+            <div>
                 <h1>Lorem ipsum dolor sit amet</h1>
-            </li>
-            <li>
+            </div>
+            <div>
                 <h1>Fusce turpis ipsum, interdum bibendum</h1>
-            </li>
-        </ul>
+            </div>
+        </div>
         <div class="info">
             <p>partners@harpoon.vc</p>
             <h2>Menlo Park, Ca</h2>
@@ -44,8 +43,8 @@
             <h2>About us</h2>
         </div>
         <div class="wrapper">
-            <ul id="slider2">
-                <li>
+            <div id="slider2">
+                <div>
                     <div class="description">
                         <h3 class="quote">"Harpoon Ventures is building a portfolio of top-tier early stage startups."</h3>
                         <p>Harpoon Ventures is building a portfolio of top-tier early stage startups and helping them win them
@@ -53,18 +52,18 @@
                             units. Our team brings an unparalleled combination of top-tier Silicon Valley venture capital
                             experience together with deep domain knowledge in government, special operations, and intelligence.
                         </p>
-                    </div>
-                    <div class="squares">
-                        <div class="first-row">
-                            <img class="responsive-img" src="./assets/images/about-pic1.png" alt="notes">
+                        <div class="squares">
+                            <div class="first-row">
+                                <img class="responsive-img" src="./assets/images/about-pic1.png" alt="notes">
+                            </div>
+                            <div class="second-row">
+                                <img class="responsive-img" src="./assets/images/about-pic3.png" alt="square">
+                                <img class="responsive-img" src="./assets/images//about-pic2.png" alt="newspapers">
+                            </div>
                         </div>
-                        <div class="second-row">
-                            <img class="responsive-img" src="./assets/images/about-pic3.png" alt="square">
-                            <img class="responsive-img" src="./assets/images//about-pic2.png" alt="newspapers">
-                        </div>
                     </div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <div class="description">
                         <h3 class="quote">"Harpoon Ventures is building a portfolio of top-tier early stage startups."</h3>
                         <p>Harpoon Ventures is building a portfolio of top-tier early stage startups and helping them win them
@@ -72,46 +71,94 @@
                             units. Our team brings an unparalleled combination of top-tier Silicon Valley venture capital
                             experience together with deep domain knowledge in government, special operations, and intelligence.
                         </p>
+                        <div class="squares">
+                            <div class="first-row">
+                                <img class="responsive-img" src="./assets/images/about-pic1.png" alt="notes">
+                            </div>
+                            <div class="second-row">
+                                <img class="responsive-img" src="./assets/images/about-pic3.png" alt="square">
+                                <img class="responsive-img" src="./assets/images//about-pic2.png" alt="newspapers">
+                            </div>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div class="portfolio">
         <div class="title">
             <h2>Our portfolio</h2>
         </div>
-        <div class="prj-wrapper">
-            <div class="projectInfo">
-                <img src="./assets/images/logo1.png" class="responsive-img" alt="company logo">
-                <h4>VTOL autonomous heavy lift drones</h4>
-                <p>Next generation autonomous Vertical Takeoff and Landing (VTOL) with payloads in excess of 150 lbs and range
-                    in excess of 300 miles.
-                </p>
-                <button>View more</button>
+        <div id="slider3">
+            <div>
+                <div class="prj-wrapper">
+                    <div class="projectInfo">
+                        <img src="./assets/images/logo1.png" class="responsive-img" alt="company logo">
+                        <h4>VTOL autonomous heavy lift drones</h4>
+                        <p>Next generation autonomous Vertical Takeoff and Landing (VTOL) with payloads in excess of 150 lbs
+                            and range in excess of 300 miles.
+                        </p>
+                        <button class="btn">View more</button>
+                    </div>
+                    <div class="projectInfo">
+                        <img src="./assets/images/logo2.png" class="responsive-img" alt="company logo">
+                        <h4>AR comprehensive situational awareness</h4>
+                        <p>Augmented Reality (AR) enabled common operation picture with customizable AR layers over full motion
+                            video feeds.
+                        </p>
+                        <button class="btn">View more</button>
+                    </div>
+                    <div class="projectInfo">
+                        <img src="./assets/images/logo3.png" class="responsive-img" alt="company logo">
+                        <h4>Autonomous drones for underway launch & recovery</h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        </p>
+                        <button class="btn">View more</button>
+                    </div>
+                    <div class="projectInfo">
+                        <img src="./assets/images/logo4.png" class="responsive-img" alt="company logo">
+                        <h4>Real-time mixed reality training</h4>
+                        <p>Augmented Reality (AR) multiplayer games and training scenarios enabling users to seamlessly fuse
+                            a digital world with the real world.
+                        </p>
+                        <button class="btn">View more</button>
+                    </div>
+                </div>
             </div>
-            <div class="projectInfo">
-                <img src="./assets/images/logo2.png" class="responsive-img" alt="company logo">
-                <h4>AR comprehensive situational awareness</h4>
-                <p>Augmented Reality (AR) enabled common operation picture with customizable AR layers over full motion video
-                    feeds.
-                </p>
-                <button>View more</button>
-            </div>
-            <div class="projectInfo">
-                <img src="./assets/images/logo3.png" class="responsive-img" alt="company logo">
-                <h4>Autonomous drones for underway launch & recovery</h4>
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                </p>
-                <button>View more</button>
-            </div>
-            <div class="projectInfo">
-                <img src="./assets/images/logo4.png" class="responsive-img" alt="company logo">
-                <h4>Real-time mixed reality training</h4>
-                <p>Augmented Reality (AR) multiplayer games and training scenarios enabling users to seamlessly fuse a digital
-                    world with the real world.
-                </p>
-                <button>View more</button>
+            <div>
+                <div class="prj-wrapper">
+                    <div class="projectInfo">
+                        <img src="./assets/images/logo1.png" class="responsive-img" alt="company logo">
+                        <h4>VTOL autonomous heavy lift drones</h4>
+                        <p>Next generation autonomous Vertical Takeoff and Landing (VTOL) with payloads in excess of 150 lbs
+                            and range in excess of 300 miles.
+                        </p>
+                        <button class="btn">View more</button>
+                    </div>
+                    <div class="projectInfo">
+                        <img src="./assets/images/logo2.png" class="responsive-img" alt="company logo">
+                        <h4>AR comprehensive situational awareness</h4>
+                        <p>Augmented Reality (AR) enabled common operation picture with customizable AR layers over full motion
+                            video feeds.
+                        </p>
+                        <button class="btn">View more</button>
+                    </div>
+                    <div class="projectInfo">
+                        <img src="./assets/images/logo3.png" class="responsive-img" alt="company logo">
+                        <h4>Autonomous drones for underway launch & recovery</h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        </p>
+                        <button class="btn">View more</button>
+                    </div>
+                    <div class="projectInfo">
+                        <img src="./assets/images/logo4.png" class="responsive-img" alt="company logo">
+                        <h4>Real-time mixed reality training</h4>
+                        <p>Augmented Reality (AR) multiplayer games and training scenarios enabling users to seamlessly fuse
+                            a digital world with the real world.
+                        </p>
+                        <button class="btn">View more</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div>
@@ -123,87 +170,257 @@
         <div class="title">
             <h2>Our advisors</h2>
         </div>
-        <div class="top-quote-wrapper">
-            <h3 class="quote top">"We are seeking advisors who provide strategic insight...</h3>
-        </div>
-        <div class="advisor-wrapper">
-            <div class="advisor-info">
-                <img src="./assets/images/advisor1.png" class="responsive-img" alt="advisor">
-                <div class="details">
-                    <h4>David Petraeus</h4>
-                    <ul>
-                        <li>Former director of CIA</li>
-                        <li>Former commander of CENTCOM
-                        </li>
-                        <li>General, US Army, Ret. (4-star)</li>
-                        <li>KKR Global Institute Chairman</li>
-                    </ul>
+        <div id="slider4">
+            <div>
+                <div class="top-quote-wrapper">
+                    <h3 class="quote top">"We are seeking advisors who provide strategic insight...</h3>
+                </div>
+                <div class="advisor-wrapper">
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor1.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>David Petraeus</h4>
+                            <ul>
+                                <li>Former director of CIA</li>
+                                <li>Former commander of CENTCOM
+                                </li>
+                                <li>General, US Army, Ret. (4-star)</li>
+                                <li>KKR Global Institute Chairman</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor2.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Robert Work</h4>
+                            <ul>
+                                <li>Former Deputy Secretary of Defense</li>
+                                <li>Former Undersecretary of the Navy</li>
+                                <li>Colonel, US Marine Corps</li>
+                                <li>CEO of Center for New American Sec.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor3.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Michael Hayden</h4>
+                            <ul>
+                                <li>Former Director of CIA</li>
+                                <li>Former Director of NSA</li>
+                                <li>Former Principal Dep. Dir. For National Intel.</li>
+                                <li>General, US Air Force, Ret. (4-star)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor4.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Tom Mahnken</h4>
+                            <ul>
+                                <li>Former Dep. Assist. Sec. Defense Policy</li>
+                                <li>President of Center for Strat. Budget Assess.</li>
+                                <li>Captain, US Navy</li>
+                                <li>Professor, Johns Hopkins SAIS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor5.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Michael Hayden</h4>
+                            <ul>
+                                <li>Former Commander of SOCOM</li>
+                                <li>Former Commander of JSOC</li>
+                                <li>Former Commander of SOCEUR</li>
+                                <li>Admiral, US Navy, Ret. (4-star)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-quote-wrapper">
+                    <h3 class="quote bottom">...and unparalleled network leverage."</h3>
                 </div>
             </div>
-            <div class="advisor-info">
-                <img src="./assets/images/advisor2.png" class="responsive-img" alt="advisor">
-                <div class="details">
-                    <h4>Robert Work</h4>
-                    <ul>
-                        <li>Former Deputy Secretary of Defense</li>
-                        <li>Former Undersecretary of the Navy</li>
-                        <li>Colonel, US Marine Corps</li>
-                        <li>CEO of Center for New American Sec.</li>
-                    </ul>
+            <div>
+                <div class="top-quote-wrapper">
+                    <h3 class="quote top">"We are seeking advisors who provide strategic insight...</h3>
+                </div>
+                <div class="advisor-wrapper">
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor1.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>David Petraeus</h4>
+                            <ul>
+                                <li>Former director of CIA</li>
+                                <li>Former commander of CENTCOM
+                                </li>
+                                <li>General, US Army, Ret. (4-star)</li>
+                                <li>KKR Global Institute Chairman</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor2.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Robert Work</h4>
+                            <ul>
+                                <li>Former Deputy Secretary of Defense</li>
+                                <li>Former Undersecretary of the Navy</li>
+                                <li>Colonel, US Marine Corps</li>
+                                <li>CEO of Center for New American Sec.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor3.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Michael Hayden</h4>
+                            <ul>
+                                <li>Former Director of CIA</li>
+                                <li>Former Director of NSA</li>
+                                <li>Former Principal Dep. Dir. For National Intel.</li>
+                                <li>General, US Air Force, Ret. (4-star)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor4.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Tom Mahnken</h4>
+                            <ul>
+                                <li>Former Dep. Assist. Sec. Defense Policy</li>
+                                <li>President of Center for Strat. Budget Assess.</li>
+                                <li>Captain, US Navy</li>
+                                <li>Professor, Johns Hopkins SAIS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor5.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Michael Hayden</h4>
+                            <ul>
+                                <li>Former Commander of SOCOM</li>
+                                <li>Former Commander of JSOC</li>
+                                <li>Former Commander of SOCEUR</li>
+                                <li>Admiral, US Navy, Ret. (4-star)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-quote-wrapper">
+                    <h3 class="quote bottom">...and unparalleled network leverage."</h3>
                 </div>
             </div>
-            <div class="advisor-info">
-                <img src="./assets/images/advisor3.png" class="responsive-img" alt="advisor">
-                <div class="details">
-                    <h4>Michael Hayden</h4>
-                    <ul>
-                        <li>Former Director of CIA</li>
-                        <li>Former Director of NSA</li>
-                        <li>Former Principal Dep. Dir. For National Intel.</li>
-                        <li>General, US Air Force, Ret. (4-star)</li>
-                    </ul>
+            <div>
+                <div class="top-quote-wrapper">
+                    <h3 class="quote top">"We are seeking advisors who provide strategic insight...</h3>
+                </div>
+                <div class="advisor-wrapper">
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor1.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>David Petraeus</h4>
+                            <ul>
+                                <li>Former director of CIA</li>
+                                <li>Former commander of CENTCOM
+                                </li>
+                                <li>General, US Army, Ret. (4-star)</li>
+                                <li>KKR Global Institute Chairman</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor2.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Robert Work</h4>
+                            <ul>
+                                <li>Former Deputy Secretary of Defense</li>
+                                <li>Former Undersecretary of the Navy</li>
+                                <li>Colonel, US Marine Corps</li>
+                                <li>CEO of Center for New American Sec.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor3.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Michael Hayden</h4>
+                            <ul>
+                                <li>Former Director of CIA</li>
+                                <li>Former Director of NSA</li>
+                                <li>Former Principal Dep. Dir. For National Intel.</li>
+                                <li>General, US Air Force, Ret. (4-star)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor4.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Tom Mahnken</h4>
+                            <ul>
+                                <li>Former Dep. Assist. Sec. Defense Policy</li>
+                                <li>President of Center for Strat. Budget Assess.</li>
+                                <li>Captain, US Navy</li>
+                                <li>Professor, Johns Hopkins SAIS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <img src="./assets/images/advisor5.png" class="responsive-img" alt="advisor">
+                        <div class="details">
+                            <h4>Michael Hayden</h4>
+                            <ul>
+                                <li>Former Commander of SOCOM</li>
+                                <li>Former Commander of JSOC</li>
+                                <li>Former Commander of SOCEUR</li>
+                                <li>Admiral, US Navy, Ret. (4-star)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-quote-wrapper">
+                    <h3 class="quote bottom">...and unparalleled network leverage."</h3>
                 </div>
             </div>
-            <div class="advisor-info">
-                <img src="./assets/images/advisor4.png" class="responsive-img" alt="advisor">
-                <div class="details">
-                    <h4>Tom Mahnken</h4>
-                    <ul>
-                        <li>Former Dep. Assist. Sec. Defense Policy</li>
-                        <li>President of Center for Strat. Budget Assess.</li>
-                        <li>Captain, US Navy</li>
-                        <li>Professor, Johns Hopkins SAIS</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="advisor-info">
-                <img src="./assets/images/advisor5.png" class="responsive-img" alt="advisor">
-                <div class="details">
-                    <h4>Michael Hayden</h4>
-                    <ul>
-                        <li>Former Commander of SOCOM</li>
-                        <li>Former Commander of JSOC</li>
-                        <li>Former Commander of SOCEUR</li>
-                        <li>Admiral, US Navy, Ret. (4-star)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-quote-wrapper">
-            <h3 class="quote bottom">...and unparalleled network leverage."</h3>
         </div>
     </div>
     <div class="investors">
         <div class="title">
             <h2>Our investors</h2>
         </div>
-        <div class="content">
-            <h3 class="quote">"Our investors help us source the best companies, and most advanced technologies, in the world."</h3>
-            <h4>Confirmed</h4>
-            <img src="./assets/images/lightspeed.png" class="responsive-img" alt="lightspeed logo">
-            <h4>In talks</h4>
-            <img src="assets/images/sequoia.png" class="responsive-img" alt="sequoia logo">
-            <img src="assets/images/andreessen_horowitz_logo.png" class="responsive-img" alt="andreessen horowitz logo">
+        <div id="slider5">
+            <div>
+                <div class="content">
+                    <h3 class="quote">"Our investors help us source the best companies, and most advanced technologies, in the world."</h3>
+                    <h4>Confirmed</h4>
+                    <img src="./assets/images/lightspeed.png" class="responsive-img" alt="lightspeed logo">
+                    <h4>In talks</h4>
+                    <img src="assets/images/sequoia.png" class="responsive-img" alt="sequoia logo">
+                    <img src="assets/images/andreessen_horowitz_logo.png" class="responsive-img" alt="andreessen horowitz logo">
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <h3 class="quote">"Our investors help us source the best companies, and most advanced technologies, in the world."</h3>
+                    <h4>Confirmed</h4>
+                    <img src="./assets/images/lightspeed.png" class="responsive-img" alt="lightspeed logo">
+                    <h4>In talks</h4>
+                    <img src="assets/images/sequoia.png" class="responsive-img" alt="sequoia logo">
+                    <img src="assets/images/andreessen_horowitz_logo.png" class="responsive-img" alt="andreessen horowitz logo">
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <h3 class="quote">"Our investors help us source the best companies, and most advanced technologies, in the world."</h3>
+                    <h4>Confirmed</h4>
+                    <img src="./assets/images/lightspeed.png" class="responsive-img" alt="lightspeed logo">
+                    <h4>In talks</h4>
+                    <img src="assets/images/sequoia.png" class="responsive-img" alt="sequoia logo">
+                    <img src="assets/images/andreessen_horowitz_logo.png" class="responsive-img" alt="andreessen horowitz logo">
+                </div>
+            </div>
         </div>
     </div>
     <footer>

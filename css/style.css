@@ -307,7 +307,7 @@ body {
   background: url("../assets/images/intro.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60em;
+  height: 42em;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -324,10 +324,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0; }
-  .intro button {
-    position: absolute;
-    right: 20%;
-    top: 5%; }
 
 #slider1 img, #slider1 li h1 {
   position: relative;
@@ -554,7 +550,7 @@ footer {
     margin: 0;
     padding: 1em 0; }
 
-button {
+.btn {
   border: 2px solid #56bcbb;
   background: transparent;
   color: #fff;
@@ -569,8 +565,13 @@ button {
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
   cursor: pointer; }
-  button:hover {
+  .btn:hover {
     background-position: 60%; }
+
+.login-btn {
+  position: absolute;
+  right: 20%;
+  top: 5%; }
 
 .title {
   border-bottom: 4px solid #56bcbb;
@@ -582,7 +583,8 @@ button {
     color: #2e5470;
     font-size: 2em;
     text-transform: uppercase;
-    margin: 0; }
+    margin: 0;
+    font-weight: bold; }
 
 .quote {
   font-size: 1.6em;
@@ -598,5 +600,42 @@ button {
 .responsive-img {
   max-width: 100%;
   height: auto; }
+
+.tns-nav {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  z-index: 10; }
+  .tns-nav button {
+    display: block;
+    margin-bottom: 10px !important; }
+
+.tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 0; }
+
+.intro .tns-nav > [aria-controls],
+.portfolio .tns-nav > [aria-controls],
+.investors .tns-nav > [aria-controls] {
+  background: #fff; }
+
+.about .tns-nav > [aria-controls],
+.advisors .tns-nav > [aria-controls] {
+  background: #2e5470; }
+
+.intro .tns-nav > [aria-selected="true"],
+.portfolio .tns-nav > [aria-selected="true"],
+.investors .tns-nav > [aria-selected="true"],
+.about .tns-nav > [aria-selected="true"],
+.advisors .tns-nav > [aria-selected="true"] {
+  background: #56bcbb; }
+
+.tns-outer {
+  position: relative;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@ $(document).ready(function(){
             autoplay: false,
             axis: "vertical",
             controls: false,
-            autoHeight: false,
+            autoHeight: true,
             nav: true,
             mouseDrag: true,
           });

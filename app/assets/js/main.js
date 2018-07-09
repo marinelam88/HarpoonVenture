@@ -20,6 +20,7 @@ $(document).ready(function(){
             autoHeight: true,
             nav: true,
             mouseDrag: true,
+            useLocalStorage: false
           });
 
         return slider;

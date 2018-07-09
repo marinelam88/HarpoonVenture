@@ -1,5 +1,6 @@
 .about{
-    padding: 0 1em;
+    padding: 0 2em;
+    position: relative;
 }
 
 .wrapper{
@@ -13,29 +14,18 @@
 }
 
 .squares{
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
     img{
-        width: 120px;
-        height: 120px;
+        margin-bottom: 1em;
     }
 }
 
 .first-row, .second-row{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-}
-
-.first-row{
-    margin-bottom: 1em;
-}
-
-.second-row{
-    img:last-of-type{
-        margin-left: 1em;
-    }
+    flex-direction: column;
 }
 
 .description{
@@ -43,21 +33,51 @@
     h3{
         color: $dark-blue;
     }
+    p{
+        line-height: 2.188;
+    }
+}
+
+@media screen and (min-width: $width-small){
+    .about{
+        height: auto;
+    }
+    .squares{
+        transform: rotate(-45deg);
+        width: 100%;
+    }
+    .first-row, .second-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        margin-bottom: 1em;
+    }
+
+    .second-row{
+        img:last-of-type{
+            margin-left: 1em;
+    }
+
+    .description{
+        width: 100%;
+    } 
 }
 
 @media screen and (min-width: $width-medium){
     .about{
         padding: 0;
     }
-
+    
+    }
     .description{
         width: 50%;
     }
 
     .squares{
         transform: rotate(-45deg);
-        position: relative;
-        width: 40%;
+        position: absolute;
+        right: 2em;
         img{
             width: 120px;
             height: 120px;

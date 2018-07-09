@@ -19,8 +19,15 @@
     }
 }
 
-.login-btn {
+.login-btn{
     position: absolute;
-    right: 20%;
-    top: 5%;
+    top: 3em;
+}
+
+@media screen and (min-width: $width-medium){
+    .login-btn {
+        position: absolute;
+        right: 20%;
+        top: 5%;
+    }
 }

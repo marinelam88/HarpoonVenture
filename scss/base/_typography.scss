@@ -3,6 +3,10 @@
     src: url("../fonts/Futura_Std.otf");
   }
 
-  body{
+  h1, h2, h3, h4, a, button{
       font-family: FuturaStd;
+  }
+
+  p, li{
+    font-family: 'Open Sans', sans-serif;
   }

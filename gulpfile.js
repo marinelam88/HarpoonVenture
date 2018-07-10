@@ -6,6 +6,7 @@ var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var gulpIf = require('gulp-if');
+var del = require('del');
 
 gulp.task('browserSync', function () {
     browserSync({
@@ -24,7 +25,6 @@ gulp.task('sass', function () {
         }));
 })
 
-// Watchers
 gulp.task('watch', function () {
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
@@ -55,10 +55,15 @@ gulp.task('default', function (callback) {
     )
 })
 
+gulp.task('clean', function() {
+    del(['dist/**/*']);
+})
+
 gulp.task('build', function(callback) {
     runSequence(
-      'sass',
-      ['useref', 'fonts', 'images'],
-      callback
+        'clean',
+        'sass',
+        ['useref', 'fonts', 'images'],
+        callback
     )
-  })
+})

@@ -36,8 +36,8 @@ h1{
 
 .info{
     text-align: center;
-    position: absolute;
-    bottom: 2em;
+    position: relative;
+    top: 10em;
     
     p, h2{
         font-size: 1.875em;
@@ -46,5 +46,6 @@ h1{
     i{
         font-size: 1.875em;
         padding-top: 1em;
+        cursor: pointer;
     }
 }

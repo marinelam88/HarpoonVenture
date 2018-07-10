@@ -1,5 +1,8 @@
 .advisors{
-    padding: 0 1em;
+    padding-top: 0;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     h3{
         color: $dark-blue;
         text-align: center;
@@ -65,10 +68,9 @@
     }
 }
 
-
 @media screen and (min-width: $width-medium){
     .advisors{
-        padding: 0;
+        padding-left: 0;
     }
     .advisor-wrapper{
         flex-direction: row;

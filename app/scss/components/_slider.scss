@@ -1,11 +1,12 @@
 .tns-nav {
     position: absolute;
-    right: 0;
-    top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 100%;
 
     button {
-        display: block;
-        margin-bottom: 10px !important;
+        display: inline-block;
     }
     z-index: 10;
   }
@@ -39,4 +40,30 @@
 .tns-outer {
     position: relative;
     width: 100%;
+}
+
+@media screen and (min-width: $width-medium){
+    .tns-nav {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        left: 97%;
+    
+        button {
+            display: block;
+            margin-bottom: 10px !important;
+        }
+      }
+      .about .tns-nav, .portfolio .tns-nav{
+          left: 96%;
+      }
+      .intro .tns-nav{
+        top: 0;
+    }
+}
+
+@media screen and (min-width: $width-large){
+    .about .tns-nav, .portfolio .tns-nav{
+        right: 1em;
+    }
 }

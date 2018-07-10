@@ -1,10 +1,14 @@
 @font-face {
-    font-family: FuturaStd;
     src: url("../fonts/Futura_Std.otf");
+    font-family: 'FuturaStd';
+  }
+
+  body {
+    font-family: 'FuturaStd', 'Helvetica'
   }
 
   h1, h2, h3, h4, a, button{
-      font-family: FuturaStd;
+      font-family: 'FuturaStd', Helvetica;
   }
 
   p, li{

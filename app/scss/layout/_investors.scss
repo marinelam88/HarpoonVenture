@@ -31,6 +31,12 @@
     .content{
         width: 70%;
         position: relative;
+        left: 8em;
+    }
+}
+
+@media screen and (min-width: $width-large){
+    .content{
         left: 15em;
     }
 }

@@ -298,11 +298,14 @@ template {
   display: none; }
 
 @font-face {
-  font-family: FuturaStd;
-  src: url("../fonts/Futura_Std.otf"); }
+  src: url("../fonts/Futura_Std.otf");
+  font-family: 'FuturaStd'; }
+
+body {
+  font-family: 'FuturaStd', 'Helvetica'; }
 
 h1, h2, h3, h4, a, button {
-  font-family: FuturaStd; }
+  font-family: 'FuturaStd', Helvetica; }
 
 p, li {
   font-family: 'Open Sans', sans-serif; }
@@ -366,14 +369,15 @@ h1 {
 .squares {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 2em; }
 
 .first-row, .second-row {
   display: flex;
   flex-direction: column; }
   .first-row img, .second-row img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 1em; }
 
 .description {
@@ -393,6 +397,8 @@ h1 {
     flex-direction: row;
     justify-content: center; }
     .squares img, .first-row img, .second-row img {
+      width: 120px;
+      height: 120px;
       margin-left: 1em; } }
 
 @media screen and (min-width: 769px) {
@@ -415,6 +421,10 @@ h1 {
     position: absolute;
     top: 10vh;
     right: 10vw; } }
+
+@media screen and (min-width: 1100px) {
+  .description {
+    margin-left: 13em; } }
 
 .prj-wrapper {
   display: flex;
@@ -470,7 +480,10 @@ h1 {
     width: 40%; } }
 
 .advisors {
-  padding: 0 1em; }
+  padding-top: 0;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em; }
   .advisors h3 {
     color: #2e5470;
     text-align: center;
@@ -524,7 +537,7 @@ h1 {
 
 @media screen and (min-width: 769px) {
   .advisors {
-    padding: 0; }
+    padding-left: 0; }
   .advisor-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -580,6 +593,10 @@ h1 {
   .content {
     width: 70%;
     position: relative;
+    left: 8em; } }
+
+@media screen and (min-width: 1100px) {
+  .content {
     left: 15em; } }
 
 footer {
@@ -649,12 +666,13 @@ footer {
 
 .tns-nav {
   position: absolute;
-  right: 0;
-  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 100%;
   z-index: 10; }
   .tns-nav button {
-    display: block;
-    margin-bottom: 10px !important; }
+    display: inline-block; }
 
 .tns-nav > [aria-controls] {
   width: 9px;
@@ -683,3 +701,21 @@ footer {
 .tns-outer {
   position: relative;
   width: 100%; }
+
+@media screen and (min-width: 769px) {
+  .tns-nav {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    left: 97%; }
+    .tns-nav button {
+      display: block;
+      margin-bottom: 10px !important; }
+  .about .tns-nav, .portfolio .tns-nav {
+    left: 96%; }
+  .intro .tns-nav {
+    top: 0; } }
+
+@media screen and (min-width: 1100px) {
+  .about .tns-nav, .portfolio .tns-nav {
+    right: 1em; } }

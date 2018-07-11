@@ -52,7 +52,6 @@
         }
     }
     .upper-content{
-        display: none;
         position: absolute;
         top: 40%;
         left: 30%;
@@ -106,7 +105,6 @@
         right: 3em;
         bottom: 1em;
     }
-
 }
 
 @media screen and (min-width: $width-large){

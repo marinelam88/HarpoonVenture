@@ -48,7 +48,6 @@
     } 
 
     .squares, .first-row, .second-row{
-        display: flex;
         flex-direction: row;
         justify-content: center;
         margin-top: 0;
@@ -74,8 +73,6 @@
         justify-content: flex-start;
     }
     .first-row, .second-row{
-        display: flex;
-        flex-direction: row;
         justify-content: flex-end;
         img:last-of-type{
             margin-left: 1em;
@@ -92,7 +89,7 @@
 
 @media screen and (min-width: $width-large){
     .about{
-        height: 40em;
+        height: 38em;
         padding-bottom: 5em; 
     }
     .first-row, .second-row{

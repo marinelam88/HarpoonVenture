@@ -11,6 +11,10 @@
     z-index: 10;
   }
 
+.about .tns-nav{
+    top: 94%;
+}  
+
 .tns-nav > [aria-controls] {
     width: 9px;
     height: 9px;
@@ -42,8 +46,14 @@
     width: 100%;
 }
 
+@media screen and (min-width: $width-small){
+    .about .tns-nav{
+        top: 92%;
+    }  
+}
+
 @media screen and (min-width: $width-medium){
-    .tns-nav {
+    .tns-nav, .about .tns-nav {
         position: absolute;
         right: 0;
         top: 40%;
@@ -53,9 +63,6 @@
             display: block;
             margin-bottom: 10px !important;
         }
-      }
-      .about .tns-nav, .portfolio .tns-nav{
-          left: 96%;
       }
 }
 
